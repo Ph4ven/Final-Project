@@ -1,0 +1,48 @@
+<html>
+<head>
+  <meta charset= 'utf-8'>
+  <link rel= 'stylesheet' type= 'text/css' href= 'dust.css'>
+<title>Hearthstone Dust Calculator</title>
+</head>
+<body background= 'http://toadogre.com/wp-content/uploads/2017/01/cropped-tavern-brawl-art.jpg'>
+  <h1>Hearthstone Dust Calculator</h1>
+  <div id='nameInput'>
+    Deck Name:
+    <input id='deckName' type="text" name="deckName"><br>
+  </div>
+  <br>
+  <div id= 'options'>
+    Commons Needed: <input id='common' type="text" name="comNeed" value= "0">
+    Rares Needed: <input id='rare' type="text" name="rareNeed" value= "0">
+    Epics Needed: <input id='epic' type="text" name="epicNeed" value= "0">
+    Legendaries Needed: <input id='legend' type="text" name="legNeed" value= "0">
+  </div>
+
+  <div id='dustDisplay'>
+    <h2 id='dD'>Dust Needed:</h2>
+    <button id='sD' onclick= 'saveDeck()'>Save Deck</button>
+  </div>
+  <div id='dCosts'>
+    <button id='iDu' onclick= 'indvDust()'>Display Dust Costs</button>
+  </div>
+
+<h1 id='note'>Notes</h1>
+<canvas id='sketch' width= '500' height= '300'></canvas>
+<button id ='clearS' onclick= 'clearSketch()'>Clear</button>
+
+<script src="https://www.gstatic.com/firebasejs/5.0.4/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBSmHHwzFS7rUl37Cr-cZBaEE9G_y4PpN4",
+    authDomain: "dust-calculator.firebaseapp.com",
+    databaseURL: "https://dust-calculator.firebaseio.com",
+    projectId: "dust-calculator",
+    storageBucket: "dust-calculator.appspot.com",
+    messagingSenderId: "609322529134"
+  };
+  firebase.initializeApp(config);
+</script>
+
+<script src= 'dust.js'></script>
+</body>

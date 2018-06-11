@@ -1,0 +1,51 @@
+#note {
+  text-align: center;
+}
+
+#sketch {
+    padding: 0;
+    margin: auto;
+    display: block;
+    border:2px solid #888;
+    border-radius:4px;
+}
+
+#clearS {
+  padding: 0;
+  margin: auto;
+  display: block;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+}
+
+h2 {
+  color: white;
+  text-align: center;
+}
+
+#options {
+  color: white;
+  text-align: center;
+}
+
+#nameInput {
+  color: white;
+  text-align: center;
+}
+
+button {
+    background-color: #3F3C3C;
+    color: white;
+    border-radius: 8px;
+    border: 2px solid #1F1E1E;
+    padding: 0;
+    margin: auto;
+    display: block;
+}
+
+canvas {
+  background-color: white;
+}
